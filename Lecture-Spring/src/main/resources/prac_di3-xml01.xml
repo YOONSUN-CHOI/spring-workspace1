@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	
+	<bean class="prac.di3.xml.n01.Car" id="car" />
+	<bean class="prac.di3.xml.n01.HankookTier" id="tire" />
+	
+	<bean class="prac.di3.xml.n01.HankookTier" id="hankook" />
+	<bean class="prac.di3.xml.n01.kumhoTire" id="kumho" />
+	
+	<bean class="prac.di3.xml.n01.Car" id="car2">
+		<property name="tire" ref="hankook"></property>
+		<!-- ref : 윗 부분 중 뭘 참조할것인디! -->
+	</bean>
+	
+</beans>

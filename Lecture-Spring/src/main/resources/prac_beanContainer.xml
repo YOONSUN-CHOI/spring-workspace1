@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	
+	<!-- Hello hello = new Hello(); -->
+	<bean class="prac.basic1.Hello" id="hello" />
+	<bean class="prac.basic1.Hello" id="hello2" />
+	
+	<bean class="prac.basic1.HelloSingle" id="hs" factory-method="getInstance" />
+	<bean class="prac.basic1.HelloSingle" id="hs2" factory-method="getInstance" />
+	<!-- factory-method 통해서 getinstance메소드 사용 -->
+	
+</beans>
